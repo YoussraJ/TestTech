@@ -1,0 +1,106 @@
+.body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.news {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: 10vw;
+}
+.home{
+    margin-top: 16vh;
+}
+.title span {
+    display: block;
+    color: aquamarine;
+    padding-top: 1.25rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.news .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:-12.5rem;
+    top: 2.813rem;
+}
+.content .workshop {
+    display: block;
+    width: 45vw;
+}
+.content{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding-top: 10vh;
+}
+.content .parag{
+    width: 40vw;
+}
+.content .parag h2,p{
+    margin-bottom: 5vh;
+}
+.content .parag h2 {
+    line-height: 1.5;
+}
+.content .parag p {
+    color: #777;
+    line-height: 2;
+    font-size: 0.75rem;
+}
+.content .writer img{
+    width: 4.375rem;
+    height: 4.063rem;
+    border-radius: 50%;
+}
+.writer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+}
+.content .writer strong {
+    color: #000;
+}
+@media (max-width:47.438rem){
+    .news  {
+      flex-direction: column;
+      right: 4vw;
+      gap: 3.125rem;
+    } 
+    .news .title {
+        position: static;
+    }
+    .body {
+        justify-content: center;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    .content .parag{
+        width: 70vw;
+    }
+    .content .workshop {
+        width: 75vw;
+        margin-right: 10vw;
+    }
+}
+
+@media (max-width:370px){
+    .astronaute img{
+        width: 70vw;
+    }
+}
+@media (max-width:991px){
+    .home{
+        margin-top: 22vh;
+    }
+}
